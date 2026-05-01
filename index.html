@@ -1,0 +1,617 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Giovanni Cornejo</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="relative bg-gray-800">
+      <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+        <div class="relative flex h-16 items-center justify-between">
+          <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+            <!-- Mobile menu button-->
+            <button
+              id="menu-btn"
+              type="button"
+              class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-white/5 hover:text-white"
+            >
+              <span class="absolute -inset-0.5"></span>
+              <span class="sr-only">Open main menu</span>
+              <svg
+                id="icon-open"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                data-slot="icon"
+                aria-hidden="true"
+                class="size-6"
+              >
+                <path
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <svg
+                id="icon-close"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                data-slot="icon"
+                aria-hidden="true"
+                class="size-6 hidden"
+              >
+                <path
+                  d="M6 18 18 6M6 6l12 12"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+          <div
+            class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start"
+          >
+            <div class="flex shrink-0 items-center gap-2">
+              <span class="text-white font-bold text-xl">Giovanni Cornejo</span>
+              <a
+                href="https://www.github.com/cornejog553"
+                target="_blank"
+                class="flex items-center gap-2 rounded-md bg-black px-2 py-1 text-white text-sm font-semibold hover:bg-indigo-400 transition"
+              >
+                <img
+                  src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/github.svg"
+                  class="h-4 w-4 invert"
+                  alt="Github"
+                />
+                Follow
+              </a>
+            </div>
+
+            <div class="hidden sm:ml-6 sm:block">
+              <div class="flex space-x-4">
+                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-white/5 hover:text-white" -->
+                <a
+                  href="#projects"
+                  class="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-white/5 hover:text-white"
+                  >Projects</a
+                >
+                <a
+                  href="#skills"
+                  class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white"
+                  >Skills</a
+                >
+                <a
+                  href="#"
+                  class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white"
+                  >About</a
+                >
+                <a
+                  href="#"
+                  class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white"
+                  >Experience</a
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0"
+          ></div>
+        </div>
+      </div>
+
+      <div id="mobile-menu" class="hidden sm:hidden">
+        <div class="space-y-1 px-2 pt-2 pb-3">
+          <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-white/5 hover:text-white" -->
+          <a
+            href="#"
+            aria-current="page"
+            class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white"
+            >Dashboard</a
+          >
+          <a
+            href="#"
+            class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white"
+            >Team</a
+          >
+          <a
+            href="#"
+            class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white"
+            >Projects</a
+          >
+          <a
+            href="#"
+            class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white"
+            >Calendar</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+
+    <div
+      class="relative min-h-screen flex items-center justify-center bg-cover bg-center"
+      style="
+        background-image: url(&quot;https://images.unsplash.com/photo-1555066931-4365d14bab8c&quot;);
+      "
+    >
+      <!-- Dark overlay -->
+      <div class="absolute inset-0 bg-gray-900/70"></div>
+
+      <!-- Content -->
+      <div class="relative z-10 mx-auto max-w-2xl text-center px-6">
+        <h1
+          class="text-5xl font-semibold tracking-tight text-white sm:text-7xl"
+        >
+          Full Stack Developer Focused on Building Scalable, Production-Ready
+          Applications
+        </h1>
+
+        <div class="mt-10 flex items-center justify-center gap-x-6">
+          <a
+            href="https://www.linkedin.com/in/giovanni-cornejo-6723bb11a/"
+            class="flex items-center gap-2 rounded-md bg-[#0A66C2] px-4 py-2 text-white font-semibold hover:bg-[#004182] transition"
+          >
+            <img
+              src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/linkedin.svg"
+              class="h-4 w-4 invert"
+              alt="LinkedIn"
+            />
+            Connect
+          </a>
+          <a href="#projects" class="text-white font-semibold"> Projects → </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Projects Section -->
+
+    <div class="bg-gray-900 py-24 sm:py-32" id="projects">
+      <div class="mx-auto max-w-6xl px-6 lg:px-8">
+        <h2 class="text-center text-4xl sm:text-5xl font-semibold text-white">
+          Projects
+        </h2>
+        <p class="text-center text-gray-400 mt-4">
+          A selection of full stack applications I’ve built
+        </p>
+
+        <!-- Project Card -->
+        <div
+          class="mt-16 rounded-2xl bg-white/5 overflow-hidden shadow-lg hover:bg-white/10 transition"
+        >
+          <div class="grid lg:grid-cols-5">
+            <div class="lg:col-span-3 h-72 lg:h-full overflow-hidden">
+              <img
+                src="imgs/PERNDashboardScreenshot.png"
+                class="w-full h-full object-cover hover:scale-105 transition duration-500"
+                alt="Project screenshot"
+              />
+            </div>
+
+            <div class="lg:col-span-2 p-8 flex flex-col justify-between">
+              <div>
+                <h3 class="text-2xl font-semibold text-white">
+                  PERN Dashboard
+                </h3>
+
+                <p class="mt-4 text-gray-400">
+                  A full stack admin dashboard built with React, Node.js,
+                  Express, and PostgreSQL. Includes authentication, CRUD
+                  operations, and dynamic data visualization.
+                </p>
+
+                <!-- Tech Stack -->
+                <div class="mt-6 flex flex-wrap gap-4 items-center">
+                  <img src="https://cdn.simpleicons.org/react" class="h-6" />
+                  <img
+                    src="https://cdn.simpleicons.org/node.js"
+                    class="h-6 invert"
+                  />
+                  <img
+                    src="https://cdn.simpleicons.org/express"
+                    class="h-6 invert"
+                  />
+                  <img
+                    src="https://cdn.simpleicons.org/postgresql"
+                    class="h-6"
+                  />
+                  <img
+                    src="https://cdn.simpleicons.org/tailwindcss"
+                    class="h-6"
+                  />
+                </div>
+              </div>
+
+              <div class="mt-8 flex gap-4">
+                <a
+                  href="https://pern-dashboard-ahmaj0ju1-giovanni-cornejos-projects.vercel.app/"
+                  target="_blank"
+                  class="px-4 py-2 rounded-md bg-indigo-500 text-white text-sm font-semibold hover:bg-indigo-400 transition"
+                >
+                  Live Demo
+                </a>
+
+                <a
+                  href="https://github.com/cornejog553/PERNdashboard"
+                  target="_blank"
+                  class="px-4 py-2 rounded-md border border-white/20 text-white text-sm font-semibold hover:bg-white/10 transition"
+                >
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Skills Section -->
+
+    <div class="bg-gray-900 py-24 sm:py-32" id="skills">
+      <div class="mx-auto max-w-6xl px-6 lg:px-8">
+        <h2 class="text-center text-4xl sm:text-5xl font-semibold text-white">
+          Skills & Technologies
+        </h2>
+        <p class="text-center text-gray-400 mt-4">
+          Technologies I use to build scalable, production-ready applications
+        </p>
+
+        <div class="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          <!-- Frontend -->
+          <div class="rounded-2xl bg-white/5 p-6 hover:bg-white/10 transition">
+            <h3 class="text-white text-lg font-semibold mb-6">Frontend</h3>
+            <div class="grid grid-cols-3 gap-6 text-center">
+              <div class="group">
+                <img
+                  src="https://cdn.simpleicons.org/react"
+                  class="h-8 mx-auto group-hover:scale-110 transition"
+                />
+                <p class="text-sm text-gray-400 mt-2">React</p>
+              </div>
+
+              <div class="group">
+                <img
+                  src="https://cdn.simpleicons.org/javascript"
+                  class="h-8 mx-auto group-hover:scale-110 transition"
+                />
+                <p class="text-sm text-gray-400 mt-2">JavaScript</p>
+              </div>
+
+              <div class="group">
+                <img
+                  src="https://cdn.simpleicons.org/typescript"
+                  class="h-8 mx-auto group-hover:scale-110 transition"
+                />
+                <p class="text-sm text-gray-400 mt-2">TypeScript</p>
+              </div>
+
+              <div class="group">
+                <img
+                  src="https://cdn.simpleicons.org/html5"
+                  class="h-8 mx-auto group-hover:scale-110 transition"
+                />
+                <p class="text-sm text-gray-400 mt-2">HTML</p>
+              </div>
+
+              <div class="group">
+                <img
+                  src="https://cdn.simpleicons.org/tailwindcss"
+                  class="h-8 mx-auto group-hover:scale-110 transition"
+                />
+                <p class="text-sm text-gray-400 mt-2">Tailwind</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Backend -->
+          <div class="rounded-2xl bg-white/5 p-6 hover:bg-white/10 transition">
+            <h3 class="text-white text-lg font-semibold mb-6">Backend</h3>
+            <div class="grid grid-cols-3 gap-6 text-center">
+              <div class="group">
+                <img
+                  src="https://cdn.simpleicons.org/node.js"
+                  class="h-8 mx-auto group-hover:scale-110 transition"
+                />
+                <p class="text-sm text-gray-400 mt-2">Node.js</p>
+              </div>
+
+              <div class="group">
+                <img
+                  src="https://cdn.simpleicons.org/express"
+                  class="h-8 mx-auto group-hover:scale-110 transition invert"
+                />
+                <p class="text-sm text-gray-400 mt-2">Express</p>
+              </div>
+
+              <div class="group">
+                <img
+                  src="https://cdn.simpleicons.org/postgresql"
+                  class="h-8 mx-auto group-hover:scale-110 transition"
+                />
+                <p class="text-sm text-gray-400 mt-2">PostgreSQL</p>
+              </div>
+
+              <div class="group">
+                <svg
+                  class="h-8 mx-auto text-gray-300"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M4 6c0-1.657 4.03-3 9-3s9 1.343 9 3-4.03 3-9 3-9-1.343-9-3zm0 6c0 1.657 4.03 3 9 3s9-1.343 9-3m-18 6c0 1.657 4.03 3 9 3s9-1.343 9-3V6"
+                  />
+                </svg>
+                <p class="text-sm text-gray-400 mt-2">SQL</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tools -->
+          <div class="rounded-2xl bg-white/5 p-6 hover:bg-white/10 transition">
+            <h3 class="text-white text-lg font-semibold mb-6">
+              Tools & DevOps
+            </h3>
+            <div class="grid grid-cols-3 gap-6 text-center">
+              <div class="group">
+                <img
+                  src="https://cdn.simpleicons.org/git"
+                  class="h-8 mx-auto group-hover:scale-110 transition"
+                />
+                <p class="text-sm text-gray-400 mt-2">Git</p>
+              </div>
+
+              <div class="group">
+                <img
+                  src="https://cdn.simpleicons.org/github/ffffff"
+                  class="h-8 mx-auto group-hover:scale-110 transition"
+                />
+                <p class="text-sm text-gray-400 mt-2">GitHub</p>
+              </div>
+
+              <div class="group">
+                <img
+                  src="https://cdn.simpleicons.org/vercel"
+                  class="h-8 mx-auto group-hover:scale-110 transition"
+                />
+                <p class="text-sm text-gray-400 mt-2">Vercel</p>
+              </div>
+
+              <div class="group">
+                <img
+                  src="https://cdn.simpleicons.org/jira"
+                  class="h-8 mx-auto group-hover:scale-110 transition"
+                />
+                <p class="text-sm text-gray-400 mt-2">Jira</p>
+              </div>
+
+              <div class="group">
+                <img
+                  src="https://cdn.simpleicons.org/confluence"
+                  class="h-8 mx-auto group-hover:scale-110 transition"
+                />
+                <p class="text-sm text-gray-400 mt-2">Confluence</p>
+              </div>
+
+              <div class="group">
+                <img
+                  src="https://cdn.simpleicons.org/postman"
+                  class="h-8 mx-auto group-hover:scale-110 transition"
+                />
+                <p class="text-sm text-gray-400 mt-2">Postman</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Section -->
+
+    <div class="isolate bg-gray-900 px-6 py-24 sm:py-32 lg:px-8">
+      <div
+        aria-hidden="true"
+        class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+      >
+        <div
+          style="
+            clip-path: polygon(
+              74.1% 44.1%,
+              100% 61.6%,
+              97.5% 26.9%,
+              85.5% 0.1%,
+              80.7% 2%,
+              72.5% 32.5%,
+              60.2% 62.4%,
+              52.4% 68.1%,
+              47.5% 58.3%,
+              45.2% 34.5%,
+              27.5% 76.7%,
+              0.1% 64.9%,
+              17.9% 100%,
+              27.6% 76.8%,
+              76.1% 97.7%,
+              74.1% 44.1%
+            );
+          "
+          class="relative left-1/2 -z-10 aspect-1155/678 w-144.5 max-w-none -translate-x-1/2 rotate-30 bg-linear-to-tr from-[#ff80b5] to-[#9089fc] opacity-20 sm:left-[calc(50%-40rem)] sm:w-288.75"
+        ></div>
+      </div>
+      <div class="mx-auto max-w-2xl text-center">
+        <h2
+          class="text-4xl font-semibold tracking-tight text-balance text-white sm:text-5xl"
+        >
+          Contact Me
+        </h2>
+        <p class="mt-2 text-lg/8 text-gray-400">
+          Currently seeking web development opportunities — available for
+          interviews and full time employment
+        </p>
+      </div>
+      <form action="#" method="POST" class="mx-auto mt-16 max-w-xl sm:mt-20">
+        <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+          <div>
+            <label
+              for="first-name"
+              class="block text-sm/6 font-semibold text-white"
+              >First name</label
+            >
+            <div class="mt-2.5">
+              <input
+                id="first-name"
+                type="text"
+                name="first-name"
+                autocomplete="given-name"
+                class="block w-full rounded-md bg-white/5 px-3.5 py-2 text-base text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500"
+              />
+            </div>
+          </div>
+          <div>
+            <label
+              for="last-name"
+              class="block text-sm/6 font-semibold text-white"
+              >Last name</label
+            >
+            <div class="mt-2.5">
+              <input
+                id="last-name"
+                type="text"
+                name="last-name"
+                autocomplete="family-name"
+                class="block w-full rounded-md bg-white/5 px-3.5 py-2 text-base text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500"
+              />
+            </div>
+          </div>
+          <div class="sm:col-span-2">
+            <label
+              for="company"
+              class="block text-sm/6 font-semibold text-white"
+              >Company</label
+            >
+            <div class="mt-2.5">
+              <input
+                id="company"
+                type="text"
+                name="company"
+                autocomplete="organization"
+                class="block w-full rounded-md bg-white/5 px-3.5 py-2 text-base text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500"
+              />
+            </div>
+          </div>
+          <div class="sm:col-span-2">
+            <label for="email" class="block text-sm/6 font-semibold text-white"
+              >Email</label
+            >
+            <div class="mt-2.5">
+              <input
+                id="email"
+                type="email"
+                name="email"
+                autocomplete="email"
+                class="block w-full rounded-md bg-white/5 px-3.5 py-2 text-base text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500"
+              />
+            </div>
+          </div>
+          <div class="sm:col-span-2">
+            <label
+              for="phone-number"
+              class="block text-sm/6 font-semibold text-white"
+              >Phone number</label
+            >
+            <div class="mt-2.5">
+              <div
+                class="flex rounded-md bg-white/5 outline-1 -outline-offset-1 outline-white/10 has-[input:focus-within]:outline-2 has-[input:focus-within]:-outline-offset-2 has-[input:focus-within]:outline-indigo-500"
+              >
+                <div class="grid shrink-0 grid-cols-1 focus-within:relative">
+                  <select
+                    id="country"
+                    name="country"
+                    autocomplete="country"
+                    aria-label="Country"
+                    class="col-start-1 row-start-1 w-full appearance-none rounded-md bg-transparent py-2 pr-7 pl-3.5 text-base text-gray-400 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500 sm:text-sm/6"
+                  >
+                    <option>US</option>
+                    <option>CA</option>
+                    <option>EU</option>
+                  </select>
+                  <svg
+                    viewBox="0 0 16 16"
+                    fill="currentColor"
+                    data-slot="icon"
+                    aria-hidden="true"
+                    class="pointer-events-none col-start-1 row-start-1 mr-2 size-5 self-center justify-self-end text-gray-400 sm:size-4"
+                  >
+                    <path
+                      d="M4.22 6.22a.75.75 0 0 1 1.06 0L8 8.94l2.72-2.72a.75.75 0 1 1 1.06 1.06l-3.25 3.25a.75.75 0 0 1-1.06 0L4.22 7.28a.75.75 0 0 1 0-1.06Z"
+                      clip-rule="evenodd"
+                      fill-rule="evenodd"
+                    />
+                  </svg>
+                </div>
+                <input
+                  id="phone-number"
+                  type="text"
+                  name="phone-number"
+                  placeholder="123-456-7890"
+                  class="block min-w-0 grow bg-transparent py-1.5 pr-3 pl-1 text-base text-white placeholder:text-gray-500 focus:outline-none sm:text-sm/6"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="sm:col-span-2">
+            <label
+              for="message"
+              class="block text-sm/6 font-semibold text-white"
+              >Message</label
+            >
+            <div class="mt-2.5">
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                class="block w-full rounded-md bg-white/5 px-3.5 py-2 text-base text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500"
+              ></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="mt-10">
+          <button
+            type="submit"
+            class="block w-full rounded-md bg-indigo-500 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-xs hover:bg-indigo-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
+          >
+            Let's talk
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <script>
+      const btn = document.getElementById("menu-btn");
+      const menu = document.getElementById("mobile-menu");
+      const openIcon = document.getElementById("icon-open");
+      const closeIcon = document.getElementById("icon-close");
+
+      btn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+
+        const isOpen = !menu.classList.contains("hidden");
+
+        // Toggle icons
+        openIcon.classList.toggle("hidden", isOpen);
+        closeIcon.classList.toggle("hidden", !isOpen);
+
+        // Accessibility
+        btn.setAttribute("aria-expanded", isOpen);
+      });
+    </script>
+  </body>
+</html>
